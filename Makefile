@@ -12,8 +12,7 @@ latex:
 	sphinx-build -M latex "." "build"
 
 pdf:
-	make latex
-	mkdir -p build/pdf
-	cp -R build/latex/* build/pdf/
-	make -C build/pdf
-	rm build/pdf/[a-df-zA-Z]* build/pdf/etc_tech_ref.[a-oq-z]*
+	mkdir -p build/pdf/latex
+	sphinx-build -M latexpdf "." "build/pdf"
+	mv build/pdf/latex/etc_tech_ref.pdf build/pdf/
+	rm -rf build/pdf/latex
