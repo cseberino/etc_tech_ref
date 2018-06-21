@@ -1,3 +1,5 @@
+.. _app:
+
 Appendices
 ================================================================================
 
@@ -5,5 +7,8 @@ blank
 
 .. toctree::
    recursive_length_prefix
-   merkle_patricia_tries
-   mining
+   root_hashes
+   bloom_filters
+   digital_signatures
+   how_nodes_find_each_other
+   code_is_law_principle
