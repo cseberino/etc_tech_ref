@@ -27,10 +27,10 @@ might incorrectly claim safe websites are malicious, but, they will never claim
 malicious websites are safe. Fortunately, extra checks can always be performed
 to eliminate any false positives.
 
-To build a Bloom filter for the set {X₁, X₂, X₃, ..., Xₙ}, with hash function H,
-calculate H(X₁) | H(X₂) | H(X₃) | ... | H(Xₙ). | is the bitwise OR operator. H
-is only valid if the number of set bits (ones) in all hashes is always less than
-or equal to some selected maximum.
+To build a Bloom filter for the set {X₁, X₂, X₃, ..., X:subscript:`n`}, with
+hash function H, calculate H(X₁) | H(X₂) | H(X₃) | ... | H(X:subscript:`n`). |
+is the bitwise OR operator. H is only valid if the number of set bits (ones) in
+all hashes is always less than or equal to some selected maximum.
 
 Larger Bloom filters have less false positives. Bloom filters of several
 megabytes are not uncommon. As hash functions typically do not have large enough
