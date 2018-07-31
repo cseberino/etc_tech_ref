@@ -4,7 +4,7 @@ Ethereum Classic Technical Reference
 ================================================================================
 
 .. toctree::
-   introduction
-   world_computer/index
-   world_database/index
-   appendices/index
+   docs/introduction
+   docs/world_computer/index
+   docs/world_database/index
+   docs/appendices/index

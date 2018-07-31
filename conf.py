@@ -7,7 +7,7 @@ author        = "Christian Seberino"
 copyright     = "2018 " + author
 version       = "0.1"
 release       = version
-master_doc    = "docs/index"
+master_doc    = "index"
 source_suffix = ".rst"
 extensions    = ["sphinx.ext.autodoc",
                  "sphinx.ext.doctest",
