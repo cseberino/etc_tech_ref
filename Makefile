@@ -6,8 +6,6 @@ all:
 html:
 	mkdir -p build
 	sphinx-build -M html  "." "build"
-	mv build/html/docs/* build/html/
-	rmdir build/html/docs
 
 latex:
 	mkdir -p build
