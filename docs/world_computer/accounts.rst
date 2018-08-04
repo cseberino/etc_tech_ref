@@ -142,7 +142,8 @@ The reason for this convoluted process is so that private keys cannot be derived
 from public keys.  This allows public keys to be safely shared with anyone.  If
 you want to learn more, investigate elliptic curve cryptography. The reason for
 this name is that historically it followed from calculations of the arc lengths
-of ellipses.
+of ellipses.  Together, public and private keys are often referred to as
+*wallets*.
 
 Addresses are formed from the first 20 bytes of the Keccak 256 hashes of public
 keys.  These are more often used to identify accounts rather than public
@@ -192,5 +193,22 @@ scripts saved in files called etc_pub_key and etc_address respectively:
    % echo $ADDRESS
    89b44e4d3c81ede05d0f5de8d1a68f754d73d997
 
---------------
-The total supply of classic ether will never exceed 210.6 million tokens.
+.. _sec_ether_gas:
+
+Ether & Gas
+--------------------------------------------------------------------------------
+
+To create and utilize smart contracts, user submit transactions.  Transactions
+must pay for these services in classic ether.  Classic ether can be obtained by
+purchasing it or by mining.  The smallest denomination of classic ether used in
+the ETC system is 1 wei.  One billion billion (10¹⁸) weis equal a single classic
+ether.  Due to the mining reward formula, the total supply of classic ether will
+never exceed 210.6 million tokens.
+
+The cost of creating and executing all smart contracts is measured in a made up
+unit referred to as gas units.  Users submit transactions that pay for gas units
+in terms of classic ether.  Notice that while the price of classic ether
+fluctuates, the price of various services in terms of gas units does not.  In
+transactions, user specify how much classic ether they are willing to pay per
+gas unit.  For security reasons, the amount of gas that can be purchased and
+used by blocks is limited.
