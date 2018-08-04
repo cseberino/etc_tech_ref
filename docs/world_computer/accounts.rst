@@ -7,11 +7,12 @@ Accounts are associated with users and
 :ref:`smart contracts <ch_smart_contracts>`.   All accounts contain the
 following five components:
 
-identifiers
+addresses
    These are sets of numbers used to identify accounts.
 
 funds
-   All funds are associated with accounts.
+   All funds are associated with accounts.  This is a balance of classic ether,
+   also know as ether or ETC.
 
 smart contracts
    All smart contracts are associated with accounts.  This component is an
@@ -26,16 +27,20 @@ nonces
    :ref:`transactions <ch_trans>`.  For smart contract accounts, these
    equal the number of associated smart contracts created.
 
-.. _sec_identifiers:
+All components of all accounts together comprise the *state* of the world
+computer.
 
-Identifiers
+.. _sec_addresses:
+
+Addresses
 --------------------------------------------------------------------------------
 
-All account identifiers are derived from secret random numbers unique to each
-account.  These secret random number account identifiers are referred to as
+All accounts are identified by addresses which are derived from secret random
+numbers unique to each account.  These secret random numbers are referred to as
 *private keys*.  Private keys must be kept private because they are used to
-transfer funds, create smart contracts, and, execute smart contracts.  Strictly
-speaking, they must be between 1 and
+digitally sign transactions from accounts.  These transactions can transfer
+funds, create smart contracts, and, execute smart contracts.  Strictly speaking,
+private key numbers must be between 1 and
 
 .. sourcecode:: shell
 
@@ -47,10 +52,10 @@ the same private key. The odds of that happening are vanishingly small. In fact,
 the number of possible private keys is approximately equal to the number of
 atoms in the entire universe!
 
-Other account identifiers are 64 byte numbers derived from private keys using an
-odd type of arithmetic with respect to pairs of numbers.  These identifiers are
-referred to as *public keys*.  Here is a Python script that calculates public
-keys from private keys:
+All private keys are associated 64 byte numbers derived from them which are
+referred to as *public keys*.  The calculation of public keys involves an odd
+type of arithmetic with respect to pairs of numbers.  Here is a Python script
+that calculates public keys from private keys:
 
 .. sourcecode:: python
 
@@ -139,13 +144,12 @@ you want to learn more, investigate elliptic curve cryptography. The reason for
 this name is that historically it followed from calculations of the arc lengths
 of ellipses.
 
-The last identifiers commonly used are the first 20 bytes of the Keccak 256
-hashes of public keys.  These are referred to as *addresses*. These are most
-often used to identify accounts rather than public keys. Interestingly, public
-keys cannot be determined solely from addresses.  Here is a Python script that
-calculates addresses from public keys. It requires the PySHA3 package. Addresses
-are typically expressed in hexadecimal notation and that convention is followed
-in this script:
+Addresses are formed from the first 20 bytes of the Keccak 256 hashes of public
+keys.  These are more often used to identify accounts rather than public
+keys. Interestingly, public keys cannot be determined solely from addresses.
+Here is a Python script that calculates addresses from public keys. It requires
+the PySHA3 package. Addresses are typically expressed in hexadecimal notation
+and that convention is followed in this script:
 
 .. sourcecode:: python
 
@@ -188,18 +192,5 @@ scripts saved in files called etc_pub_key and etc_address respectively:
    % echo $ADDRESS
    89b44e4d3c81ede05d0f5de8d1a68f754d73d997
 
-.. _sec_funds:
-
-Funds (Classic Ether)
---------------------------------------------------------------------------------
-
-Accounts are associated with balances of the native crytocurrency of ETC.  This
-currency is classic ether, or just ether for short.  It is denoted by the symbol
-ETC.  The total supply of classic ether will never exceed 210.6 million tokens.
-
-.. _sec_states:
-
-States
---------------------------------------------------------------------------------
-
-All components of all accounts comprise the *state* of the world computer.
+--------------
+The total supply of classic ether will never exceed 210.6 million tokens.
