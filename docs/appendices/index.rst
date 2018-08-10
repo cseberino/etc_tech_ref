@@ -12,3 +12,5 @@ blank
    digital_signatures
    how_nodes_find_each_other
    code_is_law_principle
+   crypto_decen_man
+   dec_of_ind

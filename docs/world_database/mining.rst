@@ -108,7 +108,7 @@ Then the base reward is as follows:
 
 .. sourcecode:: bash
 
-   5 ⋅ 0.8ᴱ
+   5 ⋅ 0.8:superscript:`E`
 
 Uncle Rewards
    This part depends on the number of uncle blocks included as well as the block
@@ -121,7 +121,7 @@ Uncle Rewards
 
 .. sourcecode:: bash
 
-   0.03125 ⋅ U ⋅ (5 ⋅ 0.8ᴱ)
+   0.03125 ⋅ U ⋅ (5 ⋅ 0.8:superscript:`E`)
 
 After block number five million, miners that create the uncle blocks began
 getting this same reward per uncle block.
@@ -142,7 +142,7 @@ Therefore, the total reward for creating a block is the following:
 
 .. sourcecode:: bash
 
-   (1 + 0.03125 ⋅ U ) ⋅ (5 ⋅ 0.8ᴱ) + G₁ ⋅ P₁ + G₂ ⋅ P₂ + G₃ ⋅ P₃ + …
+   (1 + 0.03125 ⋅ U ) ⋅ (5 ⋅ 0.8:superscript:`E`) + G₁ ⋅ P₁ + G₂ ⋅ P₂ + G₃ ⋅ P₃ + …
 
 Here is a Python script that uses this mining reward formula to calculate
 mining rewards:
@@ -196,7 +196,7 @@ number of uncle blocks, is the following:
 
 .. sourcecode:: bash
 
-   5000000 ⋅ (1 + 2 ⋅ 0.03125 ⋅ U ) ⋅ (5 ⋅ 0.8ᴱ)
+   5000000 ⋅ (1 + 2 ⋅ 0.03125 ⋅ U ) ⋅ (5 ⋅ 0.8:superscript:`E`)
 
 The factor of 2 is necessary to include the uncle block creator rewards. The
 total supply can be estimated from this formula by adding the contributions for

@@ -25,6 +25,10 @@ ETC makes an excellent smart contract platform.  ETC programs autonomously
 manage countless agreements in a secure, reliable and trustless manner.  For
 this reason ETC programs are referred to as smart contracts.
 
+ETC smart contracts can read and write to their own storage as well as invoking
+other smart contracts.  In this way, smart contracts can work to together to
+provide increasingly sophisticated services.
+
 Some, like Nick Szabo, envision smart contracts streamlining voluntary
 contractual agreements and disrupting the legal profession.  Clearly software is
 less prone to misunderstanding and ambiguity than spoken languages!  Others see
@@ -32,7 +36,11 @@ a future where complex smart contracts replace entire corporations.  Such
 programs are referred to as *distributed autonomous enterprises (DAEs)*.  For
 example, imagine a smart contract implementing a ride sharing service.  The
 smart contract could bring riders and drivers together in an efficient flexible
-manner.
+manner.  Note that ETC smart contracts can not only make existing agreements
+more efficient, but, they can also make possible contracts which previously were
+not possible due to overhead costs.  For example, in addition to assisting
+multinational corporations, ETC can help teenagers running a small business and
+people providing microservices to third world countries.
 
 Because the ETC world computer is implemented by a network of
 computers, ETC smart contracts are also referred to as decentralized
@@ -45,13 +53,13 @@ Smart Contract Languages
 --------------------------------------------------------------------------------
 
 Typically smart contracts are written in high level languages.  The
-corresponding source code is compiled to the equivalent
-ETC virtual machine instructions.  The most popular high level smart contract
-language is Solidity although there are other possible choices such as Vyper.
-Solidity is a Javascript like language designed to be easily adopted by new
-developers.  Here is a Solidity source code for a simple program that maintains
-a counter variable.  The counter can be incremented by anyone but only the user
-account that created the smart contract can reset the counter value:
+corresponding source code is compiled to the equivalent ETC virtual machine
+instructions.  The most popular high level smart contract language is Solidity
+although there are other possible choices such as Vyper.  Solidity is a
+Javascript like language designed to be easily adopted by new developers.  Here
+is a Solidity source code for a simple program that maintains a counter
+variable.  The counter can be incremented by anyone but only the user account
+that created the smart contract can reset the counter value:
 
 .. sourcecode:: javascript
 

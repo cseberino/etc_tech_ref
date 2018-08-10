@@ -32,3 +32,7 @@ nonces
 digital signatures
    digital signature of the transaction with respect to the private key of the
    originating user account
+
+If applying transactions requires more gas to complete than the maximum gas
+amount allowed, then all the effects are reversed except that the user is still
+charged for the gas utilized.

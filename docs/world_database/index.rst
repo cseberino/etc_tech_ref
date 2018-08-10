@@ -11,6 +11,9 @@ addition to transactions such as transaction *logs*.  Lastly, process of
 creating, verifying and adding new blocks to the blockchain is referred to as
 *mining*.
 
+The blockchain distributed database architecture was first introduced to the
+world in the Bitcoin system.
+
 .. toctree::
    transactions
    blocks

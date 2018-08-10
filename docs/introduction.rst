@@ -28,7 +28,7 @@ openness
    is available for inspection.
 
 reliability
-   It is virtually impossible to shut down.
+   It is always available and virtually impossible to shut down.
 
 trustlessness
    There is no need to rely on any single person or entity.
@@ -39,7 +39,7 @@ identical backup servers geographically distributed.  Suppose these web servers
 were only accessible using `onion routing
 <https://en.wikipedia.org/wiki/Onion_routing>`_.  This setup can provide
 significant censorship resistance, security, pseudonymity, openness and
-reliability.  Note however how much effort is required.  With ETC these
+reliability.  Note however how much effort is required.  With ETC, these
 properties are present by default!
 
 Because ETC is trustless, *no one* has special powers.  Therefore, it
@@ -48,4 +48,6 @@ financial and identity services.
 
 Final note, everyone *effectively* runs their applications on the same single
 computer, the ETC world computer.  However, this *virtual* computer is actually
-implemented by a worldwide network of computers.
+implemented by a worldwide network of computers.  All the computers in the
+network run all applications in parallel.  This extreme redundancy is a main
+reason the ETC world computer has its amazing properties.
