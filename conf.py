@@ -26,6 +26,7 @@ html_static_path = ["static"]
 
 # --- Latex --------------------------------------------------------------------
 
+latex_engine              = 'xelatex'
 latex_toplevel_sectioning = "part"
 latex_documents           = [(master_doc,
                               "etc_tech_ref.tex",
