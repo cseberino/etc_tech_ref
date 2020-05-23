@@ -16,3 +16,6 @@ pdf:
 	sphinx-build -M latexpdf "." "build/pdf"
 	mv build/pdf/latex/etc_tech_ref.pdf build/pdf/
 	rm -rf build/pdf/latex
+
+clean:
+	rm -rf build
